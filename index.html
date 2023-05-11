@@ -12,16 +12,22 @@
       <h1>Let's Play</h1>
 
       <section class="game-display">
-        <div class="player-options">
-          <div id="rock-btn"><button class="rock-btn btn">Rock</button></div>
-          <div id="paper-btn"><button class="paper-btn btn">Paper</button></div>
-          <div id="scissors-btn">
-            <button class="scissors-btn btn">Scissors</button>
-          </div>
+        <div id="player-options">
+          <button id="rock-btn" class="rock-btn btn">ROCK</button>
+          <button id="paper-btn" class="paper-btn btn">PAPER</button>
+          <button id="scissors-btn" class="scissors-btn btn">SCISSORS</button>
         </div>
 
         <div class="outcome">
-          <h2>Click to start</h2>
+          <div class="players-choice">
+            <p class="choices">
+              Computer choices is: <span class="computer-choice"></span>
+            </p>
+            <p class="choices">
+              Player choice is: <span class="player-choice"></span>
+            </p>
+          </div>
+          <h2 class="message">Click to start</h2>
           <p>Player: <span id="player-outcome">0</span></p>
           <p>Computer: <span id="computer-outcome">0</span></p>
         </div>
